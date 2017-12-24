@@ -1,9 +1,7 @@
-struct Node
-  {
-     int data;
-     struct Node *next;
+struct Node {
+  int data;
+  struct Node *next;
 };
-
 
 Node *initHead() {
   Node *n1 = new Node{1};

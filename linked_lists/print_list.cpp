@@ -1,12 +1,11 @@
-#include <iostream>
 #include "list.h"
-
+#include <iostream>
 
 Node *getNext(Node *node) {
-    if (node == nullptr) {
-      return nullptr;
-    }
-    return node->next;
+  if (node == nullptr) {
+    return nullptr;
+  }
+  return node->next;
 }
 
 void Print(Node *head) {
@@ -17,9 +16,6 @@ void Print(Node *head) {
     current = getNext(current);
   }
 }
-
-
-
 
 int main() {
   Print(initHead());
